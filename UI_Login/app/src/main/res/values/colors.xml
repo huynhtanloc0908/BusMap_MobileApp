@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Blue color tones -->
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_blue_dark">#1976D2</color>
+    <color name="primary_blue_light">#64B5F6</color>
+    <color name="background_blue">#E3F2FD</color>
+    <color name="text_blue">#1565C0</color>
+    
+    <!-- New design colors -->
+    <color name="button_blue_primary">#6C7CE7</color>
+    <color name="button_blue_secondary">#4A90E2</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_light_blue">#F0F4FF</color>
+    <color name="text_dark">#2C3E50</color>
+    <color name="text_gray">#95A5A6</color>
+    <color name="accent_blue">#5B7CFD</color>
+    
+    <!-- Unified blue button color -->
+    <color name="button_blue_unified">#2196F3</color>
+</resources>

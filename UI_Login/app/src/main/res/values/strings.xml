@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BusMap</string>
+    <string name="welcome_title">Welcome to BusMap</string>
+    <string name="welcome_subtitle">Ứng dụng tìm đường xe buýt thông minh</string>
+    <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="sign_in">LOGIN</string>
+    <string name="sign_in_title">Login</string>
+    <string name="create_account_title">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Comfirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="or">Hoặc</string>
+    <string name="sign_in_with_google">Đăng nhập bằng Google</string>
+    <string name="login_with">Login with</string>
+    <string name="remember_password">Ghi nhớ mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+</resources>
