@@ -1,8 +1,8 @@
 # HƯỚNG DẪN SỬ DỤNG KHI CLONE CODE VỀ
 
 - Đầu tiên tạo một thư mục trên máy bạn
-  ví dụ : Example
-  Trong thư mục đó bạn sử dụng git clone để clone code về
+  + ví dụ : Example
+  + Trong thư mục đó bạn sử dụng git clone để clone code về
   git clone https://github.com/huynhtanloc0908/BusMap_MobileApp.git
 - Lúc này trong thư mục Example của bạn sẽ có 2 thư mục
   1. UI_Login
