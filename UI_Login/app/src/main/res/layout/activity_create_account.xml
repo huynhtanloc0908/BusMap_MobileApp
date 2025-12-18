@@ -5,7 +5,7 @@
     android:id="@+id/rootCreateAccountContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light_blue"
+    android:background="@drawable/bg_login_coffee_shop"
     tools:context=".CreateAccountActivity">
 
 
@@ -27,6 +27,16 @@
             android:layout_height="wrap_content"
             android:paddingBottom="32dp">
 
+            <!-- Semi-transparent overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/coffee_overlay_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <!-- Back Button -->
             <ImageButton
                 android:id="@+id/btnBack"
@@ -38,7 +48,7 @@
                 android:src="@android:drawable/ic_menu_revert"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/button_blue_unified" />
+                app:tint="@color/coffee_text_light" />
 
             <!-- Create Account Title -->
             <TextView
@@ -46,12 +56,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:alpha="0.9"
-                android:fontFamily="sans-serif-medium"
-                android:text="@string/create_account_title"
-                android:textColor="@color/text_dark"
+                android:fontFamily="serif"
+                android:text="Join Our Coffee Family"
+                android:textColor="@color/coffee_text_light"
                 android:textSize="32sp"
                 android:textStyle="bold"
+                android:shadowColor="@color/coffee_dark"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnBack" />
@@ -65,14 +78,15 @@
                 android:layout_marginTop="48dp"
                 android:layout_marginEnd="32dp"
                 android:hint="@string/full_name"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#80FFF8DC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/button_blue_unified"
+                app:boxStrokeColor="#CCFFFFFF"
                 app:boxStrokeWidth="2dp"
-                app:hintTextColor="@color/button_blue_unified"
+                app:hintTextColor="@color/coffee_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvCreateAccountTitle">
@@ -84,7 +98,7 @@
                     android:inputType="textPersonName"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/coffee_text_dark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,14 +111,15 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:hint="@string/email"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#80FFF8DC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/button_blue_unified"
+                app:boxStrokeColor="#CCFFFFFF"
                 app:boxStrokeWidth="2dp"
-                app:hintTextColor="@color/button_blue_unified"
+                app:hintTextColor="@color/coffee_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilFullName">
@@ -116,7 +131,7 @@
                     android:inputType="textEmailAddress"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/coffee_text_dark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,14 +144,15 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:hint="@string/phone"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#80FFF8DC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/button_blue_unified"
+                app:boxStrokeColor="#CCFFFFFF"
                 app:boxStrokeWidth="2dp"
-                app:hintTextColor="@color/button_blue_unified"
+                app:hintTextColor="@color/coffee_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilEmail">
@@ -148,7 +164,7 @@
                     android:inputType="phone"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/coffee_text_dark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -161,19 +177,20 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:hint="@string/password"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#80FFF8DC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/button_blue_unified"
+                app:boxStrokeColor="#CCFFFFFF"
                 app:boxStrokeWidth="2dp"
-                app:hintTextColor="@color/button_blue_unified"
+                app:hintTextColor="@color/coffee_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilPhone"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/button_blue_unified">
+                app:passwordToggleTint="@color/coffee_primary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
@@ -182,7 +199,7 @@
                     android:inputType="textPassword"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/coffee_text_dark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -195,19 +212,20 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="32dp"
                 android:hint="@string/confirm_password"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#80FFF8DC"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/button_blue_unified"
+                app:boxStrokeColor="#CCFFFFFF"
                 app:boxStrokeWidth="2dp"
-                app:hintTextColor="@color/button_blue_unified"
+                app:hintTextColor="@color/coffee_primary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tilPassword"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/button_blue_unified">
+                app:passwordToggleTint="@color/coffee_primary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etConfirmPassword"
@@ -216,7 +234,7 @@
                     android:inputType="textPassword"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:textColor="@color/text_dark"
+                    android:textColor="@color/coffee_text_dark"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -228,18 +246,20 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="48dp"
                 android:layout_marginEnd="32dp"
-                android:alpha="0.9"
-                android:backgroundTint="#2196F3"
-                android:elevation="6dp"
+                android:background="@drawable/button_coffee_gradient_primary"
+                android:elevation="8dp"
                 android:letterSpacing="0.05"
                 android:stateListAnimator="@null"
-                android:text="Sign Up"
-                android:textColor="@color/white"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/coffee_text_light"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tilConfirmPassword" />
+                app:layout_constraintTop_toBottomOf="@id/tilConfirmPassword"
+                app:backgroundTint= "@null"
+                android:backgroundTint = "@null"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

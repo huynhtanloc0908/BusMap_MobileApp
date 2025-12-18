@@ -21,4 +21,16 @@
     
     <!-- Unified blue button color -->
     <color name="button_blue_unified">#2196F3</color>
+    
+    <!-- Coffee Shop Theme Colors -->
+    <color name="coffee_primary">#8B4513</color>        <!-- Saddle Brown -->
+    <color name="coffee_secondary">#D2691E</color>      <!-- Chocolate -->
+    <color name="coffee_accent">#CD853F</color>         <!-- Peru -->
+    <color name="coffee_dark">#654321</color>           <!-- Dark Brown -->
+    <color name="coffee_light">#F5DEB3</color>          <!-- Wheat -->
+    <color name="coffee_cream">#FFF8DC</color>          <!-- Cornsilk -->
+    <color name="coffee_text_dark">#3E2723</color>      <!-- Dark Coffee -->
+    <color name="coffee_text_light">#FFFFFF</color>     <!-- White -->
+    <color name="coffee_overlay">#40000000</color>      <!-- Light semi-transparent black -->
+    <color name="coffee_overlay_light">#30000000</color> <!-- Very light overlay -->
 </resources>

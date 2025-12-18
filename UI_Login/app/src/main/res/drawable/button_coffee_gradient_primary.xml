@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 75% opacity coffee_primary -->
+    <!-- 70% opacity coffee_dark -->
+    <!-- 65% opacity coffee_primary -->
+    <gradient
+        android:angle="135"
+        android:startColor="#C08B4513"
+        android:centerColor="#B0654321"
+        android:endColor="#A08B4513"
+        android:type="linear" />
+    <corners android:radius="32dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/coffee_text_light" />
+</shape>

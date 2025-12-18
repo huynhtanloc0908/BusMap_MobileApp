@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#B08B4513" />  <!-- 70% opacity coffee_primary -->
+    <corners android:radius="32dp" />
+    <stroke
+        android:width="3dp"
+        android:color="@color/coffee_text_light" />
+</shape>

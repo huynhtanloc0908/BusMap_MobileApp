@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">BusMap</string>
-    <string name="welcome_title">Welcome to BusMap</string>
-    <string name="welcome_subtitle">Ứng dụng tìm đường xe buýt thông minh</string>
-    <string name="create_account">CREATE AN ACCOUNT</string>
-    <string name="sign_in">LOGIN</string>
-    <string name="sign_in_title">Login</string>
-    <string name="create_account_title">Sign Up</string>
+    <string name="app_name">Coffee Shop</string>
+    <string name="welcome_title">Welcome to Coffee Shop</string>
+    <string name="welcome_subtitle">Your Perfect Coffee Experience</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in_title">Welcome Back</string>
+    <string name="create_account_title">Join Our Coffee Family</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Comfirm Password</string>
